@@ -8,25 +8,26 @@ import {
     SidebarMenuItem,
     SidebarMenuButton,
     SidebarSeparator,
+    SidebarGroupLabel,
 } from "@/components/ui/sidebar";
 import { SIDEBAR_LIST } from "@/constants/sidebar";
+import { SOCIALS_LIST } from "@/constants/socials";
+import type { SocialDefinition } from "@/types";
 import type { SidebarDefinition } from "@/types";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 
 export default function SidebarLayout() {
+    const location = useLocation();
 
     return (
-        <Sidebar collapsible="none" className="border-r border-border/60">
-            <SidebarHeader className="px-4 py-3">
+        <Sidebar collapsible="none" className="border-r border-border/60 shrink-0">
+            <SidebarHeader className="py-3">
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton size="lg" asChild>
                             <Link to="/">
-                                <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                                    <p>MK</p>
-                                </div>
-                                <div className="flex flex-col gap-0.5 leading-none">
-                                    <span className="font-heading font-semibold">Mark Kenneth Pelayo</span>
+                                <div className="flex flex-col leading-none">
+                                    <span className="font-heading font-semibold text-lg">Mark Kenneth Pelayo</span>
                                     <span>Web Developer</span>
                                 </div>
                             </Link>
@@ -39,10 +40,11 @@ export default function SidebarLayout() {
                 <SidebarGroup>
                     <SidebarGroupContent>
                         <SidebarMenu>
-                            {SIDEBAR_LIST.map((item: SidebarDefinition, index) => (
+                            {SIDEBAR_LIST.map((item: SidebarDefinition, index: number) => (
                                 <SidebarMenuItem key={index}>
                                     <SidebarMenuButton
                                         asChild
+                                        isActive={location.pathname === item.path}
                                     >
                                         <Link to={item.path}>
                                             <item.icon className="size-4" />
@@ -55,6 +57,25 @@ export default function SidebarLayout() {
                     </SidebarGroupContent>
                 </SidebarGroup>
                 <SidebarSeparator className="-mt-2 mx-0" />
+                <SidebarGroup>
+                    <SidebarGroupLabel>Socials</SidebarGroupLabel>
+                    <SidebarGroupContent>
+                        <SidebarMenu>
+                            {SOCIALS_LIST.map((item: SocialDefinition, index: number) => (
+                                <SidebarMenuItem key={index}>
+                                    <SidebarMenuButton
+                                        asChild
+                                    >
+                                        <Link to={item.href}>
+                                            <item.icon className="size-4" />
+                                            {item.label}
+                                        </Link>
+                                    </SidebarMenuButton>
+                                </SidebarMenuItem>
+                            ))}
+                        </SidebarMenu>
+                    </SidebarGroupContent>
+                </SidebarGroup>
             </SidebarContent>
         </Sidebar>
     );
