@@ -28,7 +28,7 @@ export default function SidebarLayout() {
                             <Link to="/">
                                 <div className="flex flex-col leading-none">
                                     <span className="font-heading font-semibold text-lg">Mark Kenneth Pelayo</span>
-                                    <span>Web Developer</span>
+                                    <span className="-mt-1">Web Developer</span>
                                 </div>
                             </Link>
                         </SidebarMenuButton>

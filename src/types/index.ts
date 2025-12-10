@@ -22,3 +22,19 @@ export type CertificateDefinition = {
     description: string;
     link: string;
 };
+
+export type AboutDefinition = {
+    name: string;
+    description: string;
+    icon: IconComponent;
+};
+
+export type ProjectCategory = "personal" | "top" | "fcc";
+
+export type ProjectDefinition = {
+    name: string;
+    description?: string;
+    framework: string[],
+    source?: string;
+    link?: string;
+};
