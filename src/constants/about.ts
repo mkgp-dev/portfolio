@@ -9,7 +9,7 @@ export const STATUS_LIST: AboutDefinition[] = [
     },
     {
         name: "The Odin Project",
-        description: "I’m currently learning through The Odin Project’s Full Stack JavaScript curriculum, and I’m about 36% of the way through the NodeJS section.",
+        description: "I’m currently learning through The Odin Project’s Full Stack JavaScript curriculum, and I’m at the NodeJS section.",
         icon: BookOpenText,
     },
 ];
