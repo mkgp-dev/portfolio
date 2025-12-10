@@ -1,6 +1,6 @@
 import type { SocialDefinition } from "@/types";
 import { SiCodepen, SiFreecodecamp, SiGithub } from "@icons-pack/react-simple-icons";
-import { Globe } from "lucide-react";
+import { Globe, Mail } from "lucide-react";
 
 export const SOCIALS_LIST: SocialDefinition[] = [
     {
@@ -22,5 +22,10 @@ export const SOCIALS_LIST: SocialDefinition[] = [
         label: "Linkedin",
         href: "https://www.linkedin.com/in/mkgpdev",
         icon: Globe,
+    },
+    {
+        label: "Email",
+        href: "mailto:mkgpdev@gmail.com",
+        icon: Mail,
     },
 ];

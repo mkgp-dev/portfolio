@@ -7,7 +7,7 @@ export default function Content() {
 
     return (
         <ScrollArea className="w-full h-full">
-            <main className="px-8 py-4">
+            <main className="p-4">
                 <Routes>
                     {SIDEBAR_LIST.map((item: SidebarDefinition, index: number) => {
                         const Page = item.page;
