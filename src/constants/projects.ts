@@ -1,7 +1,7 @@
 import type { ProjectCategory, ProjectDefinition } from "@/types";
 
 export const PROJECT_LIST: Record<ProjectCategory, ProjectDefinition[]> = {
-    personal: [
+    showcase: [
         {
             name: "Nova",
             description: "A modern, lightweight Point of Sale (POS) application.",

@@ -2,7 +2,7 @@ import type { ComponentType } from "react";
 
 type IconComponent = ComponentType<{ className?: string }>;
 
-export type SidebarDefinition = {
+export type MenuDefinition = {
     label: string;
     path: string;
     icon: IconComponent;
@@ -23,13 +23,14 @@ export type CertificateDefinition = {
     link: string;
 };
 
-export type AboutDefinition = {
-    name: string;
+export type StatusDefinition = {
+    title: string;
+    date: string;
     description: string;
     icon: IconComponent;
 };
 
-export type ProjectCategory = "personal" | "top" | "fcc";
+export type ProjectCategory = "showcase" | "top" | "fcc";
 
 export type ProjectDefinition = {
     name: string;
