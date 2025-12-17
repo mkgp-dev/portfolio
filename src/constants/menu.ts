@@ -1,15 +1,15 @@
-import type { SidebarDefinition } from "@/types";
+import type { MenuDefinition } from "@/types";
 import { Award, Code, Info } from "lucide-react";
-import About from "@/pages/about/About.Page";
 import Projects from "@/pages/Projects";
 import Certificates from "@/pages/Certificates";
+import Status from "@/pages/Status";
 
-export const SIDEBAR_LIST: SidebarDefinition[] = [
+export const MENU_LIST: MenuDefinition[] = [
     {
-        label: "About me",
+        label: "Status",
         path: "/",
         icon: Info,
-        page: About,
+        page: Status,
     },
     {
         label: "Projects",

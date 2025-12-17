@@ -1,16 +1,16 @@
-import { Card } from "@/components/ui/card";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import SidebarLayout from "@/components/layout/Sidebar";
 import Content from "@/components/layout/Content";
+import About from "@/components/layout/About";
 
 export default function Main() {
 
     return (
-        <Card className="w-full max-w-5xl p-0 bg-card/70 h-[80vh] border-none rounded-none shadow-lg">
-            <SidebarProvider className="min-h-[80vh]">
-                <SidebarLayout />
-                <Content />
-            </SidebarProvider>
-        </Card>
+        <div className="mx-auto w-full max-w-6xl">
+            <div className="flex items-center justify-center min-h-screen">
+                <div className="grid grid-cols-1 md:grid-cols-[1.5fr_2.5fr] gap-4">
+                    <About />
+                    <Content />
+                </div>
+            </div>
+        </div>
     );
 }

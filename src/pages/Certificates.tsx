@@ -6,7 +6,6 @@ export default function Certificates() {
 
     return (
         <div className="flex flex-col">
-            <h1 className="font-heading text-4xl">Certificates</h1>
             <div className="divide-y divide-border">
                 {CERTIFICATES_LIST.map((item: CertificateDefinition, index: number) => (
                     <div key={index} className="flex flex-col py-3">
