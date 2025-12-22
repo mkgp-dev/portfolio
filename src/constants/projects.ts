@@ -5,7 +5,20 @@ export const PROJECT_LIST: Record<ProjectCategory, ProjectDefinition[]> = {
         {
             name: "Nova",
             description: "A modern, lightweight Point of Sale (POS) application.",
-            framework: ["Tauri", "Rust", "React", "TypeScript", "Tailwind CSS", "Zustand", "shadcn/ui"],
+            framework: ["Tauri", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "SQLite"],
+        },
+        {
+            name: "Personal Blog CMS",
+            description: "A simple yet modern front-end dashboard for managing my blog posts and readers’ comments.",
+            framework: ["React", "TypeScript", "React Router v7", "TanStack React Query", "Tailwind CSS", "shadcn/ui", "TipTap", "localForage", "Lucide"],
+            source: "https://github.com/mkgp-dev/blog-cms",
+            link: "https://mkgp-blog.pages.dev"
+        },
+        {
+            name: "Personal Blog CMS API",
+            description: "API-only backend for my personal blog system.",
+            framework: ["Node.js", "Express", "TypeScript", "Prisma", "jsonwebtoken", "Zod", "Pino"],
+            source: "https://github.com/mkgp-dev/blog-cms-api",
         },
         {
             name: "Resume Makinator",
@@ -31,14 +44,14 @@ export const PROJECT_LIST: Record<ProjectCategory, ProjectDefinition[]> = {
         {
             name: "Public Backend",
             description: "Personal API gateway for my projects.",
-            framework: ["Upstash", "Axios"],
+            framework: ["Upstash", "Axios", "Vercel"],
             source: "https://github.com/mkgp-dev/public-backend",
             link: "https://mkgpdev-backend.vercel.app",
         },
         {
             name: "What to do",
             description: "A simple To-Do List project.",
-            framework: ["Webpack", "JavaScript", "Tailwind CSS", "Heroicons", "localForage"],
+            framework: ["Webpack", "JavaScript", "Tailwind CSS", "localForage", "Heroicons"],
             source: "https://github.com/mkgp-dev/what-to-do",
             link: "https://mkgp-dev.github.io/what-to-do",
         },
@@ -51,6 +64,27 @@ export const PROJECT_LIST: Record<ProjectCategory, ProjectDefinition[]> = {
         },
     ],
     top: [
+        {
+            name: "Droppy",
+            description: "A simple File Uploader project.",
+            framework: ["Node.js", "Express", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Passport", "Multer"],
+            source: "https://github.com/mkgp-dev/droppy",
+            link: "https://droppy.up.railway.app",
+        },
+        {
+            name: "Message Wall Membership",
+            description: "A simple Members Only project.",
+            framework: ["Node.js", "Express", "TypeScript", "Tailwind CSS", "DaisyUI", "PostgreSQL", "Passport"],
+            source: "https://github.com/mkgp-dev/message-wall-membership",
+            link: "https://message-wall-membership.up.railway.app",
+        },
+        {
+            name: "Playtory",
+            description: "A simple Inventory Application project.",
+            framework: ["Node.js", "Express", "TypeScript", "Tailwind CSS", "DaisyUI", "PostgreSQL"],
+            source: "https://github.com/mkgp-dev/playtory",
+            link: "https://playtory.up.railway.app",
+        },
         {
             name: "Message Wall",
             description: "A simple Mini Message Board project.",

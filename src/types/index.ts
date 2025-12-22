@@ -39,3 +39,31 @@ export type ProjectDefinition = {
     source?: string;
     link?: string;
 };
+
+export type PaginationMeta = {
+    page: number;
+    pageSize: number;
+    total: number;
+};
+
+export type Paginated<T> = {
+    data: T[];
+    meta: PaginationMeta;
+};
+
+export type BlogPost = {
+    id: string;
+    title: string;
+    content: string;
+    publishedAt: string | null;
+    createdAt: string;
+    updatedAt: string;
+};
+
+export type BlogComment = {
+    id: string;
+    username: string;
+    content: string;
+    createdAt: string;
+    updatedAt: string;
+};

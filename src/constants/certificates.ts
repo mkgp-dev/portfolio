@@ -36,4 +36,11 @@ export const CERTIFICATES_LIST: CertificateDefinition[] = [
         description: "Completed coursework through modern React and Bootstrap; building responsive, component-based UIs.",
         link: "https://www.freecodecamp.org/certification/mkgp-dev/front-end-development-libraries",
     },
+    {
+        name: "Learning the Basics of VIBE Coding: An Introduction to Visual and Interactive Programming",
+        issuer: "Certifika",
+        date: "Nov 2025",
+        description: "Earned a certificate of participation for completing a 4-hour session on Vibe Coding, covering introductory routines and practical fundamentals for visual and interactive programming.",
+        link: "https://explorer.certifika.org/token/BASE-1405",
+    },
 ];
