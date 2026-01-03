@@ -1,5 +1,5 @@
 import type { MenuDefinition } from "@/types";
-import { Award, BookOpenText, Code, Info } from "lucide-react";
+import { Award, Code, Info, Rss } from "lucide-react";
 import Projects from "@/pages/Projects";
 import Certificates from "@/pages/Certificates";
 import Status from "@/pages/Status";
@@ -27,7 +27,7 @@ export const MENU_LIST: MenuDefinition[] = [
     {
         label: "Blog",
         path: "/blog",
-        icon: BookOpenText,
+        icon: Rss,
         page: Blog,
     }
 ];
