@@ -1,18 +1,14 @@
 import Content from "@/layout/Content";
 import About from "@/layout/About";
-import CursorGlow from "@/layout/CursorGlow";
 
 export default function Main() {
 
     return (
-        <div className="relative">
-            <CursorGlow />
-            <div className="relative z-10 mx-auto w-full max-w-6xl">
-                <div className="flex items-center justify-center min-h-screen">
-                    <div className="grid grid-cols-1 md:grid-cols-[1.5fr_2.5fr] gap-4 p-0 md:p-4">
-                        <About />
-                        <Content />
-                    </div>
+        <div className="mx-auto w-full max-w-6xl">
+            <div className="flex items-center justify-center min-h-screen">
+                <div className="grid grid-cols-1 md:grid-cols-[1.5fr_2.5fr] gap-4 p-0 md:p-4">
+                    <About />
+                    <Content />
                 </div>
             </div>
         </div>
