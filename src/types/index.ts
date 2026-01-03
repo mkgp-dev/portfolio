@@ -67,3 +67,8 @@ export type BlogComment = {
     createdAt: string;
     updatedAt: string;
 };
+
+export type StackDefinition = {
+    name: string;
+    icon: IconComponent;
+};

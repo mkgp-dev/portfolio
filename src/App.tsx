@@ -1,4 +1,4 @@
-import Main from "@/components/layout/Main";
+import Main from "@/layout/Main";
 
 export default function App() {
 

@@ -125,3 +125,35 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .cursor-glow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 9999px;
+    background: radial-gradient(circle, rgba(90, 140, 255, 0.22) 0%, rgba(9, 15, 30, 0) 60%);
+    filter: blur(50px);
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+    left: var(--glow-x, -9999px);
+    top: var(--glow-y, -9999px);
+    transform: translate(-50%, -50%);
+    transition: opacity 200ms ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-glow {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .cursor-glow {
+    display: none;
+  }
+}
