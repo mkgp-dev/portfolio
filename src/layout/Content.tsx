@@ -33,7 +33,7 @@ export default function Content() {
                 </NavigationMenu>
             </div>
 
-            <Card className="w-full max-w-5xl p-0 bg-transparent h-[74.5vh] border-none">
+            <Card className="w-full max-w-5xl p-0 bg-transparent h-[74.5vh] border-none shadow-none">
                 <div className="space-y-4 h-full">
                     <ScrollArea className="w-full h-full">
                         <main className="p-4">
