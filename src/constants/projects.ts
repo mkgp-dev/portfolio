@@ -75,28 +75,24 @@ export const PROJECT_LIST: Record<ProjectCategory, ProjectDefinition[]> = {
             description: "A simple File Uploader project.",
             framework: ["Node.js", "Express", "TypeScript", "Tailwind", "Prisma", "Postgres", "Passport", "Multer"],
             source: "https://github.com/mkgp-dev/droppy",
-            link: "https://droppy.up.railway.app",
         },
         {
             name: "Message Wall Membership",
             description: "A simple Members Only project.",
             framework: ["Node.js", "Express", "TypeScript", "Tailwind", "DaisyUI", "Postgres", "Passport"],
             source: "https://github.com/mkgp-dev/message-wall-membership",
-            link: "https://message-wall-membership.up.railway.app",
         },
         {
             name: "Playtory",
             description: "A simple Inventory Application project.",
             framework: ["Node.js", "Express", "TypeScript", "Tailwind", "DaisyUI", "Postgres"],
             source: "https://github.com/mkgp-dev/playtory",
-            link: "https://playtory.up.railway.app",
         },
         {
             name: "Message Wall",
             description: "A simple Mini Message Board project.",
             framework: ["Node.js", "Express", "TypeScript", "Tailwind", "DaisyUI", "nanoid"],
             source: "https://github.com/mkgp-dev/message-wall",
-            link: "https://message-wall.up.railway.app",
         },
         {
             name: "Shople",
