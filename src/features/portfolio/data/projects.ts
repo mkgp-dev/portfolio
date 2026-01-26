@@ -3,13 +3,18 @@ import type { ProjectCategory, Project } from "@/features/portfolio/types";
 export const PROJECT_LIST: Record<ProjectCategory, Project[]> = {
     showcase: [
         {
-            name: "Nova",
-            description: "A modern, lightweight Point of Sale (POS) application.",
-            framework: ["Tauri", "React", "TypeScript", "Tailwind", "shadcn/ui", "SQLite", "Postgres"],
+            name: "Tyche Renderer",
+            description: "Compile and render videos using a React Native-inspired component workflow.",
+            framework: ["React", "TypeScript", "Tailwind"],
+        },
+        {
+            name: "Tyche",
+            description: "A creative studio for building shareable card visuals and short cover artwork, plus a text-to-speech (TTS) page.",
+            framework: ["React", "TypeScript", "React Router", "TanStack Query", "Tailwind", "shadcn/ui"],
         },
         {
             name: "Personal Blog CMS",
-            description: "A simple yet modern front-end dashboard for managing my blog posts and readers’ comments.",
+            description: "A simple yet modern front-end dashboard for managing my blog posts and readers' comments.",
             framework: ["React", "TypeScript", "React Router", "TanStack Query", "Tailwind", "shadcn/ui", "TipTap", "localForage"],
             source: "https://github.com/mkgp-dev/blog-cms",
             link: "https://mkgp-blog.pages.dev"
@@ -19,6 +24,11 @@ export const PROJECT_LIST: Record<ProjectCategory, Project[]> = {
             description: "API-only backend for my personal blog system.",
             framework: ["Node.js", "Express", "TypeScript", "Prisma", "jsonwebtoken", "Zod", "Pino"],
             source: "https://github.com/mkgp-dev/blog-cms-api",
+        },
+        {
+            name: "Nova",
+            description: "A modern, lightweight Point of Sale (POS) management that focused on restaurants. The project is ongoing and not yet fully released, with features still under development.",
+            framework: ["Tauri", "Tailwind", "shadcn/ui", "SQLite", "Postgres"],
         },
         {
             name: "Resume Makinator",
@@ -40,13 +50,6 @@ export const PROJECT_LIST: Record<ProjectCategory, Project[]> = {
             framework: ["Webpack", "Tailwind"],
             source: "https://github.com/mkgp-dev/forecast-me",
             link: "https://mkgp-dev.github.io/forecast-me",
-        },
-        {
-            name: "Public Backend",
-            description: "Personal API gateway for my projects.",
-            framework: ["Upstash", "Axios", "Vercel"],
-            source: "https://github.com/mkgp-dev/public-backend",
-            link: "https://mkgpdev-backend.vercel.app",
         },
         {
             name: "What to do",
