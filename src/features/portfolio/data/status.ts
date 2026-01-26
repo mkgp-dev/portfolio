@@ -5,19 +5,19 @@ export const STATUS_LIST: Status[] = [
     {
         title: "Transitioning from Learning to Job Hunting",
         date: "Jan 2026",
-        description: "Moved from the learning phase into job searching, with a solid base from beginner to intermediate work. I’m now looking for a role that fits my skills, despite the challenging market we have right now.",
+        description: "Moved from the learning phase into job searching, with a solid base from beginner to intermediate work. I'm now looking for a role that fits my skills, despite the challenging market we have right now.",
         icon: Search,
     },
     {
-        title: "Developing a start-up project called Nova",
+        title: "Joined a non-funded dev organization",
         date: "Nov 2025",
-        description: "Working on Nova, a non-funded POS system built with Tauri. I handle most backend development and occasionally help refine and clean up the frontend.",
+        description: "Joined an organization formed with old friends to collaborate on projects that are useful to us and potentially others. It's non-funded and focused on crafting skills, polishing workflows, and releasing projects publicly only when the team decides.",
         icon: FolderGit2,
     },
     {
         title: "Improving skills through The Odin Project",
         date: "Oct 2025",
-        description: "On a friend’s recommendation, I started The Odin Project’s Full Stack JavaScript curriculum, building personal projects for my portfolio while further strengthening my web development skills.",
+        description: "On a friend's recommendation, I started The Odin Project's Full Stack JavaScript curriculum, building personal projects for my portfolio while further strengthening my web development skills.",
         icon: BookOpenText,
     },
     {

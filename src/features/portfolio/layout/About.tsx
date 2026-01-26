@@ -12,8 +12,8 @@ export default function About() {
                 <p className="font-thin text-2xl">Web Developer</p>
             </div>
 
-            <p>I’m a developer who enjoys crafting clean, user-friendly web applications and building the systems behind them, with a focus on usability, performance, and maintainable code.</p>
-            <p>I’m currently looking for my first role where I can contribute to real product work, learn from a team, and grow through collaboration and feedback.</p>
+            <p>I’m a developer who enjoys crafting clean, user-friendly web applications with a focus on user experience, performance, and maintainable code.</p>
+            <p>I’m currently seeking an entry-level/junior developer role where I can contribute to real product work, learn from a team, and grow through collaboration and feedback.</p>
 
             <div className="flex flex-col gap-2">
                 <div className="flex flex-row flex-wrap gap-2">
