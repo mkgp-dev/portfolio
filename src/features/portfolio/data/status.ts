@@ -11,7 +11,7 @@ export const STATUS_LIST: Status[] = [
     {
         title: "Joined a non-funded dev organization",
         date: "Nov 2025",
-        description: "Joined an organization formed with old friends to collaborate on projects that are useful to us and potentially others. It's non-funded and focused on crafting skills, polishing workflows, and releasing projects publicly only when the team decides.",
+        description: "Joined an organization formed with old friends to collaborate on projects that are useful and potentially others. It's non-funded and focused on crafting skills, polishing workflows, and releasing projects publicly only when the team decides.",
         icon: FolderGit2,
     },
     {
