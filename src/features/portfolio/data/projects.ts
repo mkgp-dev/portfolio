@@ -3,6 +3,12 @@ import type { ProjectCategory, Project } from "@/features/portfolio/types";
 export const PROJECT_LIST: Record<ProjectCategory, Project[]> = {
     showcase: [
         {
+            name: "Kaizer Music Player",
+            description: "Your personal alternative-spotify music player.",
+            framework: ["Electron", "React", "TypeScript", "Tailwind", "TanStack Router", "TanStack Query", "Drizzle", "SQLite"],
+            link: "https://github.com/TerniLabs/kaizer-music-player"
+        },
+        {
             name: "Tyche Renderer",
             description: "Compile and render videos using a React Native-inspired component workflow.",
             framework: ["React", "TypeScript", "Tailwind"],
@@ -35,7 +41,7 @@ export const PROJECT_LIST: Record<ProjectCategory, Project[]> = {
         {
             name: "Resume Makinator",
             description: "A modern, browser-based tool that helps anyone create a polished resume.",
-            framework: ["React", "Tailwind", "DaisyUI", "Zustand", "localForage", "react-pdf", "dndkit"],
+            framework: ["React", "TypeScript", "Tailwind", "DaisyUI", "Zustand", "localForage", "react-pdf", "dndkit"],
             source: "https://github.com/mkgp-dev/resume-makinator",
             link: "https://resume-makinator.pages.dev"
         },

@@ -1,5 +1,5 @@
 import type { Stack } from "@/features/portfolio/types";
-import { SiDaisyui, SiExpress, SiMongodb, SiNodedotjs, SiOpenai, SiPostgresql, SiPrisma, SiReact, SiReactquery, SiShadcnui, SiTailwindcss, SiTauri, SiTypescript } from "@icons-pack/react-simple-icons";
+import { SiDaisyui, SiElectron, SiExpress, SiMongodb, SiNodedotjs, SiOpenai, SiPostgresql, SiPrisma, SiReact, SiReactquery, SiShadcnui, SiTailwindcss, SiTauri, SiTypescript } from "@icons-pack/react-simple-icons";
 
 export const STACK_LIST: Stack[] = [
     {
@@ -49,6 +49,10 @@ export const STACK_LIST: Stack[] = [
     {
         name: "Tauri",
         icon: SiTauri,
+    },
+    {
+        name: "Electron",
+        icon: SiElectron,
     },
     {
         name: "Codex",

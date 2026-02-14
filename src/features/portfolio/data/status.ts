@@ -1,7 +1,13 @@
 import type { Status } from "@/features/portfolio/types";
-import { BookOpenText, BriefcaseBusiness, CalendarCheck2, FolderGit2, GraduationCap, Search, SquareLibrary } from "lucide-react";
+import { BookCopy, BookOpenText, BriefcaseBusiness, CalendarCheck2, FolderGit2, GraduationCap, Search, SquareLibrary } from "lucide-react";
 
 export const STATUS_LIST: Status[] = [
+    {
+        title: "Continuous Exploration of Frameworks",
+        date: "Feb 2026",
+        description: "Currently exploring different frameworks to identify where I can excel. At the same time, I've been mastering the essence of prompt engineering with Codex to build personal projects that aligns to my wants and needs. As part of this growth, it expands my knowledge to web, application, and mobile development.",
+        icon: BookCopy,
+    },
     {
         title: "Transitioning from Learning to Job Hunting",
         date: "Jan 2026",
