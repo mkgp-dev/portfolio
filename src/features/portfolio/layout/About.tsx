@@ -9,7 +9,7 @@ export default function About() {
         <div className="flex flex-col gap-6 p-4 md:p-0 md:h-[80vh]">
             <div>
                 <h1 className="font-heading font-bold text-4xl">Mark Kenneth Pelayo</h1>
-                <p className="font-thin text-2xl">Web Developer</p>
+                <p className="font-thin text-2xl">Junior Web/Software Developer</p>
             </div>
 
             <p>I’m a developer who enjoys crafting clean, user-friendly web applications with a focus on user experience, performance, and maintainable code.</p>
