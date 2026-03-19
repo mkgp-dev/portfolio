@@ -6,7 +6,7 @@ export const PROJECT_LIST: Record<ProjectCategory, Project[]> = {
             name: "Kaizer Music Player",
             description: "Your personal alternative-spotify music player.",
             framework: ["Electron", "React", "TypeScript", "Tailwind", "TanStack Router", "TanStack Query", "Drizzle", "SQLite"],
-            link: "https://github.com/TerniLabs/kaizer-music-player"
+            link: "https://github.com/ternilabs/kaizer-music-player"
         },
         {
             name: "Tyche Renderer",
@@ -17,7 +17,7 @@ export const PROJECT_LIST: Record<ProjectCategory, Project[]> = {
             name: "Tyche",
             description: "A creative studio for building shareable card visuals and short cover artwork, plus a text-to-speech (TTS) page.",
             framework: ["React", "TypeScript", "React Router", "TanStack Query", "Tailwind", "shadcn/ui"],
-            link: "https://github.com/TerniLabs/snapshots/tree/main/tyche",
+            link: "https://github.com/ternilabs/snapshots/tree/main/tyche",
         },
         {
             name: "Personal Blog CMS",
@@ -36,7 +36,7 @@ export const PROJECT_LIST: Record<ProjectCategory, Project[]> = {
             name: "Nova",
             description: "A modern, lightweight Point of Sale (POS) management that focused on restaurants. The project is ongoing and not yet fully released, with features still under development.",
             framework: ["Tauri", "Tailwind", "shadcn/ui", "SQLite", "Postgres"],
-            link: "https://github.com/TerniLabs/snapshots/tree/main/nova",
+            link: "https://github.com/ternilabs/snapshots/tree/main/nova",
         },
         {
             name: "Resume Makinator",
