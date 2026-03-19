@@ -20,7 +20,7 @@ export function formatDate(value?: string | null) {
 
 export function normalizeBaseUrl(value?: string) {
     const trimmed = value?.trim();
-    if (!trimmed || trimmed === "undefined" || trimmed === "null") return "http://localhost:3000/api";
+    if (!trimmed || trimmed === "undefined" || trimmed === "null") return "http://localhost:3000";
     
     return trimmed.replace(/\/+$/, "");
 }

@@ -86,24 +86,24 @@ export function isAbortError(error: unknown) {
 export async function listPosts(params: { page: number; pageSize: number; signal?: AbortSignal }) {
     const query = buildQuery({ page: params.page, pageSize: params.pageSize });
 
-    return apiFetch<Paginated<BlogPost>>(`/public/posts?${query}`, { signal: params.signal });
+    return apiFetch<Paginated<BlogPost>>(`/v1/blog/posts?${query}`, { signal: params.signal });
 }
 
 export async function getPost(params: { id: string; signal?: AbortSignal }) {
-    return apiFetch<{ data: BlogPost }>(`/public/posts/${params.id}`, { signal: params.signal });
+    return apiFetch<{ data: BlogPost }>(`/v1/blog/posts/${params.id}`, { signal: params.signal });
 }
 
 export async function listComments(params: { id: string, page: number, pageSize: number, signal?: AbortSignal }) {
     const query = buildQuery({ page: params.page, pageSize: params.pageSize });
     
     return apiFetch<{ data: BlogComment[]; meta: PaginationMeta }>(
-        `/public/posts/${params.id}/comments?${query}`,
+        `/v1/blog/posts/${params.id}/comments?${query}`,
         { signal: params.signal }
     );
 }
 
 export async function createComment(id: string, input: { username: string, content: string }) {
-    return apiFetch<{ data: BlogComment }>(`/public/posts/${id}/comments`, {
+    return apiFetch<{ data: BlogComment }>(`/v1/blog/posts/${id}/comments`, {
         method: "POST",
         body: JSON.stringify(input),
     });

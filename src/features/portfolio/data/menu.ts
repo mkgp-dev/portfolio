@@ -7,12 +7,6 @@ import Blog from "@/features/blog/pages/Blog";
 
 export const MENU_LIST: MenuItem[] = [
     {
-        label: "Status",
-        path: "/",
-        icon: Info,
-        page: Status,
-    },
-    {
         label: "Projects",
         path: "/projects",
         icon: Code,
@@ -23,6 +17,12 @@ export const MENU_LIST: MenuItem[] = [
         path: "/certificates",
         icon: Award,
         page: Certificates,
+    },
+    {
+        label: "Status",
+        path: "/",
+        icon: Info,
+        page: Status,
     },
     {
         label: "Blog",
