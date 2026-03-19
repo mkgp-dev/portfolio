@@ -1,4 +1,4 @@
-import { Link, Route, Routes, useLocation } from "react-router";
+import { Link, Navigate, Route, Routes, useLocation } from "react-router";
 import { MENU_LIST } from "@/features/portfolio/data/menu";
 import type { MenuItem } from "@/features/portfolio/types";
 import { ScrollArea } from "@/shared/ui/scroll-area";
@@ -38,6 +38,7 @@ export default function Content() {
                     <ScrollArea className="w-full h-full">
                         <main className="p-4">
                             <Routes>
+                                <Route path="/" element={<Navigate to="/projects" replace />} />
                                 {MENU_LIST.map((item: MenuItem, index: number) => {
                                     const Page = item.page;
                                     return <Route key={index} path={item.path} element={<Page />} />

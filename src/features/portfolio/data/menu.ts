@@ -20,7 +20,7 @@ export const MENU_LIST: MenuItem[] = [
     },
     {
         label: "Status",
-        path: "/",
+        path: "/status",
         icon: Info,
         page: Status,
     },
