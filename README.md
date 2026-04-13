@@ -94,3 +94,6 @@ npm run build
 ```
 
 These checks cover the app shell, in-page navigation, representative content rendering, outbound links, and the absence of React Router in active app code.
+
+## License
+This is a source-available project. You can use it and modify it for personal, non-commercial purposes, but you may not redistribute it or claim it as your own. See the [LICENSE](./LICENSE) file for full details.
