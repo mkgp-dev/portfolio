@@ -20,13 +20,4 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
-  // Ignore Fast Refresh issue with shadcn/ui's component
-  // Files affected: theme-provider, badge, button, navigation-menu
-  // This will be removed when the issue given is resolved.
-  {
-    files: ['**/ui/**/*.ts', '**/ui/**/*.tsx', '**/shared/theme-provider.tsx'],
-    rules: {
-      'react-refresh/only-export-components': 'off',
-    },
-  },
 ])
