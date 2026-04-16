@@ -8,7 +8,8 @@ The app is organized as a desktop split-view and a mobile-friendly single-column
 
 - Left pane: identity, summary, availability state, quick contact actions, tech stack, and social icons
 - Right pane: sticky section navigation, projects, certificates, journey, and social links
-- Navigation: smooth in-page scrolling with a dedicated external `Resume` button
+- Navigation: smooth in-page scrolling across portfolio sections
+- Availability: direct contact actions with the external `Resume` button placed in the `Currently looking` area
 - Content: local typed source files under `src/content`
 
 The current availability state is controlled in code and can render either:
@@ -30,8 +31,9 @@ The current availability state is controlled in code and can render either:
 - Responsive mobile layout with wrapped navigation and stacked action controls
 - Typed portfolio content for projects, certificates, journey, profile, socials, and tech stack
 - Smooth section scrolling from the right-pane navigation
-- Resume link exposed as a dedicated external nav action
+- Resume link exposed in the availability action group
 - Availability panel with content-driven action buttons
+- Floating scroll-to-top button that appears after scrolling
 
 ## Getting Started
 

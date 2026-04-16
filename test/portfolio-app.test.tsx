@@ -1,12 +1,13 @@
 import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 
-import { render, screen, within } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it, vi } from 'vitest'
 
 import App from '@/App'
 import { PROFILE } from '@/content/profile'
+import { RESUME_LINK } from '@/content/navigation'
 
 function getSourceFiles(dir: string): string[] {
   return readdirSync(dir).flatMap((entry) => {
@@ -45,6 +46,9 @@ describe('portfolio app', () => {
   it('renders the one-page portfolio shell and removes starter content', () => {
     render(<App />)
     const sectionNav = screen.getByRole('navigation', { name: /portfolio sections/i })
+    const availabilityActions = screen.getByRole('group', {
+      name: /currently looking actions/i,
+    })
 
     expect(
       screen.getByRole('heading', { level: 1, name: /mark kenneth pelayo/i }),
@@ -66,10 +70,7 @@ describe('portfolio app', () => {
       'href',
       '#socials',
     )
-    expect(within(sectionNav).getByRole('link', { name: /resume/i })).toHaveAttribute(
-      'href',
-      'https://github.com/mkgp-dev/mkgp-dev/blob/main/storage/resume.pdf',
-    )
+    expect(within(sectionNav).queryByRole('link', { name: /resume/i })).not.toBeInTheDocument()
 
     expect(screen.getByRole('heading', { level: 2, name: /^projects$/i })).toBeInTheDocument()
     expect(
@@ -78,6 +79,21 @@ describe('portfolio app', () => {
     expect(screen.getByRole('heading', { level: 2, name: /journey/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: /^social$/i })).toBeInTheDocument()
     expect(screen.getByText(/currently looking/i)).toBeInTheDocument()
+    expect(screen.getByText(/view each certificate directly from this section/i)).toBeInTheDocument()
+
+    expect(within(availabilityActions).getByRole('link', { name: /resume/i })).toHaveAttribute(
+      'href',
+      RESUME_LINK.href,
+    )
+
+    const actionLinks = within(availabilityActions).getAllByRole('link')
+    expect(actionLinks.map((link) => link.getAttribute('href'))).toEqual([
+      RESUME_LINK.href,
+      PROFILE.availability.actions[0]?.href,
+      PROFILE.availability.actions[1]?.href,
+      PROFILE.availability.actions[2]?.href,
+    ])
+
     PROFILE.availability.actions.forEach((action) => {
       const matcher = new RegExp(action.label, 'i')
 
@@ -117,6 +133,36 @@ describe('portfolio app', () => {
     expect(scrollIntoView).toHaveBeenCalledWith({
       behavior: 'smooth',
       block: 'start',
+    })
+  })
+
+  it('shows a scroll-to-top button after scrolling the content pane and scrolls it back to the top', async () => {
+    render(<App />)
+    const user = userEvent.setup()
+    const contentPane = screen.getByRole('main')
+    const scrollTo = vi.fn()
+
+    Object.defineProperty(contentPane, 'scrollTop', {
+      configurable: true,
+      writable: true,
+      value: 0,
+    })
+    Object.defineProperty(contentPane, 'scrollTo', {
+      configurable: true,
+      value: scrollTo,
+    })
+
+    expect(screen.queryByRole('button', { name: /scroll to top/i })).not.toBeInTheDocument()
+
+    contentPane.scrollTop = 240
+    fireEvent.scroll(contentPane)
+
+    const button = screen.getByRole('button', { name: /scroll to top/i })
+    await user.click(button)
+
+    expect(scrollTo).toHaveBeenCalledWith({
+      top: 0,
+      behavior: 'smooth',
     })
   })
 
