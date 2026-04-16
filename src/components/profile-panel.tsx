@@ -1,8 +1,11 @@
+import { RESUME_LINK } from '@/content/navigation'
 import { PROFILE } from '@/content/profile'
 import { SOCIAL_LINKS } from '@/content/socials'
 import { TECH_STACK } from '@/content/tech-stack'
 
 export function ProfilePanel() {
+  const availabilityActions = [RESUME_LINK, ...PROFILE.availability.actions]
+
   return (
     <aside className="py-4 md:py-0 lg:sticky lg:top-0 lg:self-start">
       <div className="flex w-full flex-col gap-6 px-1 md:gap-7 lg:max-h-[calc(100dvh-4rem)] lg:pr-6">
@@ -40,8 +43,12 @@ export function ProfilePanel() {
           </div>
 
           {PROFILE.availability.isOpenToWork ? (
-            <div className="grid gap-2 sm:grid-cols-2">
-              {PROFILE.availability.actions.map((action) => {
+            <div
+              role="group"
+              aria-label="Currently looking actions"
+              className="grid gap-2 sm:grid-cols-2"
+            >
+              {availabilityActions.map((action) => {
                 const Icon = action.icon
                 const isDisabled = action.href.length === 0
                 const isExternal = action.href.length > 0 && !action.href.startsWith('mailto:')

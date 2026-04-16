@@ -7,7 +7,7 @@ export function CertificatesSection() {
       id="certificates"
       eyebrow="Verified Developer Credentials"
       title="Certificates"
-      description="A collection of official certificates that validate my training, completed coursework, and commitment to building a strong foundation as a developer."
+      description="A collection of official certificates that validate my training, completed coursework, and commitment to building a strong foundation as a developer. View each certificate directly from this section."
     >
       <div className="divide-y divide-white/10">
         {CERTIFICATES.map((certificate, index) => (

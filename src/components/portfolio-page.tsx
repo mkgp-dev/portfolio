@@ -1,12 +1,17 @@
+import { useRef } from 'react'
+
 import { CertificatesSection } from '@/components/certificates-section'
 import { JourneySection } from '@/components/journey-section'
 import { PortfolioNav } from '@/components/portfolio-nav'
 import { ProfilePanel } from '@/components/profile-panel'
 import { ProjectsSection } from '@/components/projects-section'
+import { ScrollToTopButton } from '@/components/scroll-to-top-button'
 import { SocialSection } from '@/components/social-section'
 import { NAV_ITEMS } from '@/content/navigation'
 
 export function PortfolioPage() {
+  const contentRef = useRef<HTMLElement | null>(null)
+
   return (
     <div className="relative min-h-dvh overflow-x-clip bg-background text-foreground">
       <div
@@ -23,7 +28,10 @@ export function PortfolioPage() {
               <PortfolioNav items={NAV_ITEMS} />
             </div>
 
-            <main className="divide-y divide-white/10 lg:min-h-0 lg:flex-1 lg:overflow-y-auto">
+            <main
+              ref={contentRef}
+              className="divide-y divide-white/10 lg:min-h-0 lg:flex-1 lg:overflow-y-auto"
+            >
               <ProjectsSection />
               <CertificatesSection />
               <JourneySection />
@@ -32,6 +40,8 @@ export function PortfolioPage() {
           </div>
         </div>
       </div>
+
+      <ScrollToTopButton scrollContainerRef={contentRef} />
     </div>
   )
 }
