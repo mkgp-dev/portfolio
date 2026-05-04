@@ -12,7 +12,8 @@ import {
   SiShadcnui,
   SiTailwindcss,
   SiTauri,
-  SiTypescript
+  SiTypescript,
+  SiWxt
 } from '@icons-pack/react-simple-icons'
 import { Bot } from 'lucide-react'
 
@@ -33,5 +34,6 @@ export const TECH_STACK: TechStackItem[] = [
   { name: 'daisyUI', icon: SiDaisyui },
   { name: 'Tauri', icon: SiTauri },
   { name: 'Electron', icon: SiElectron },
+  { name: 'WXT', icon: SiWxt },
   { name: 'Codex', icon: Bot },
 ]

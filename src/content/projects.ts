@@ -6,12 +6,25 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
     title: 'Showcase',
     projects: [
       {
+        name: 'Email Makinator',
+        description: 'A modern browser extension that helps anyone create a polished email.',
+        stack: [
+          'WXT',
+          'React',
+          'TypeScript',
+          'Tailwind',
+          'Zustand',
+        ],
+        sourceUrl: 'https://github.com/mkgp-dev/email-makinator',
+      },
+      {
         name: 'Codex Skills',
         description: 'A collection of reusable Codex skills for coding tasks.',
         stack: [
           'Codex',
         ],
         sourceUrl: 'https://github.com/mkgp-dev/codex-skills',
+        liveUrl: 'https://skills.sh/mkgp-dev/codex-skills',
       },
       {
         name: 'Kaizer Music Player',
@@ -46,7 +59,6 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
           'Tailwind',
           'shadcn/ui',
         ],
-        liveUrl: 'https://github.com/ternilabs/snapshots/tree/main/tyche',
       },
       {
         name: 'Personal Blog',
@@ -74,14 +86,13 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
       {
         name: 'Nova',
         description:
-          'A modern, lightweight point-of-sale management project focused on restaurants and still under development.',
+          'A modern lightweight point-of-sale management project focused on restaurants and still under development.',
         stack: ['Tauri', 'Tailwind', 'shadcn/ui', 'SQLite', 'Postgres'],
-        liveUrl: 'https://github.com/ternilabs/snapshots/tree/main/nova',
       },
       {
         name: 'Resume Makinator',
         description:
-          'A modern, browser-based tool that helps anyone create a polished resume.',
+          'A modern browser-based tool that helps anyone create a polished resume.',
         stack: [
           'React',
           'TypeScript',
