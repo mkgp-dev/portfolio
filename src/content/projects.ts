@@ -6,6 +6,20 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
     title: 'Showcase',
     projects: [
       {
+        name: 'Ephemora',
+        description: 'A social chatroom where people can talk freely without permanent profiles or message history.',
+        stack: [
+          'React',
+          'TypeScript',
+          'Mantine',
+          'TanStack Router',
+          'TanStack Query',
+          'supabase-js',
+          'socket.io'
+        ],
+        sourceUrl: 'https://github.com/ternilabs/ephemora',
+      },    
+      {
         name: 'Email Makinator',
         description: 'A modern browser extension that helps anyone create a polished email.',
         stack: [
@@ -16,6 +30,7 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
           'Zustand',
         ],
         sourceUrl: 'https://github.com/mkgp-dev/email-makinator',
+        liveUrl: 'https://addons.mozilla.org/en-US/firefox/addon/email-makinator',
       },
       {
         name: 'Codex Skills',
@@ -28,7 +43,7 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
       },
       {
         name: 'Kaizer Music Player',
-        description: 'Your personal alternative desktop music player.',
+        description: 'Your personal desktop music player integrated with third-party APIs for streaming and downloading.',
         stack: [
           'Electron',
           'React',
@@ -75,7 +90,6 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
           'localForage',
         ],
         sourceUrl: 'https://github.com/mkgp-dev/blog-cms',
-        liveUrl: 'https://blog.mkgpdev.xyz',
       },
       {
         name: 'Personal Blog CMS API',
@@ -105,35 +119,6 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
         ],
         sourceUrl: 'https://github.com/mkgp-dev/resume-makinator',
         liveUrl: 'https://rm.mkgpdev.xyz',
-      },
-      {
-        name: 'Ship Wreck',
-        description: 'A simple Battleship project.',
-        stack: ['Webpack', 'Tailwind', 'Jest'],
-        sourceUrl: 'https://github.com/mkgp-dev/ship-wreck',
-        liveUrl: 'https://mkgp-dev.github.io/ship-wreck',
-      },
-      {
-        name: 'Forecast Me',
-        description: 'A simple Weather App project.',
-        stack: ['Webpack', 'Tailwind'],
-        sourceUrl: 'https://github.com/mkgp-dev/forecast-me',
-        liveUrl: 'https://mkgp-dev.github.io/forecast-me',
-      },
-      {
-        name: 'What to do',
-        description: 'A simple To-Do List project.',
-        stack: ['Webpack', 'Tailwind', 'localForage'],
-        sourceUrl: 'https://github.com/mkgp-dev/what-to-do',
-        liveUrl: 'https://mkgp-dev.github.io/what-to-do',
-      },
-      {
-        name: 'Hard Licker',
-        description: 'A simple Restaurant Page project.',
-        stack: ['Webpack', 'CSS'],
-        sourceUrl:
-          'https://github.com/mkgp-dev/personal-top-archive/blob/main/restaurant-page/open-source',
-        liveUrl: 'https://mkgp-dev.github.io/personal-top-archive/restaurant-page',
       },
       {
         name: 'Blog Portfolio PHP',
@@ -222,6 +207,35 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
         stack: ['Webpack', 'Tailwind'],
         sourceUrl: 'https://github.com/mkgp-dev/unofficial-portfolio',
         liveUrl: 'https://mkgp-dev.github.io/unofficial-portfolio',
+      },
+      {
+        name: 'Ship Wreck',
+        description: 'A simple Battleship project.',
+        stack: ['Webpack', 'Tailwind', 'Jest'],
+        sourceUrl: 'https://github.com/mkgp-dev/ship-wreck',
+        liveUrl: 'https://mkgp-dev.github.io/ship-wreck',
+      },
+      {
+        name: 'Forecast Me',
+        description: 'A simple Weather App project.',
+        stack: ['Webpack', 'Tailwind'],
+        sourceUrl: 'https://github.com/mkgp-dev/forecast-me',
+        liveUrl: 'https://mkgp-dev.github.io/forecast-me',
+      },
+      {
+        name: 'What to do',
+        description: 'A simple To-Do List project.',
+        stack: ['Webpack', 'Tailwind', 'localForage'],
+        sourceUrl: 'https://github.com/mkgp-dev/what-to-do',
+        liveUrl: 'https://mkgp-dev.github.io/what-to-do',
+      },
+      {
+        name: 'Hard Licker',
+        description: 'A simple Restaurant Page project.',
+        stack: ['Webpack', 'CSS'],
+        sourceUrl:
+          'https://github.com/mkgp-dev/personal-top-archive/blob/main/restaurant-page/open-source',
+        liveUrl: 'https://mkgp-dev.github.io/personal-top-archive/restaurant-page',
       },
       {
         name: 'Tic Tac Toe',
